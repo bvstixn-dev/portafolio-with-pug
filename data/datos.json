@@ -1,6 +1,6 @@
 {
   "nombre": "Bastián Galdames",
-  "actitudes": ["Responsable", "Trabajo en equipo", "Comunicación efectiva"],
+  "actitudes": ["Soy Responsable", "Trabajo en equipo", "Comunicación efectiva"],
   "educacion": [
     {
       "imagen": "/img/stomas.png",
@@ -30,7 +30,8 @@
     },
     {
       "nombre": "Portafolio Personal",
-      "descripcion": "Sitio web hecho en Express.js y Pug para mostrar mis proyectos, educación y habilidades."
+      "descripcion": "Sitio web hecho en Express.js y Pug para mostrar mis proyectos, educación y habilidades.",
+      "github": "https://github.com/bvstixn-dev/portafolio-with-pug"
     }
   ]
 }
