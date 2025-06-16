@@ -1,0 +1,11 @@
+extends layout/index
+
+block content 
+    h1 Curriculum
+    //img(src="/img/stomas.png", alt="Universidad Santo Tomas", class="img-thumbnail", style="max-width: 50px")
+    each edu in educacion 
+        div
+            img(src=edu.imagen, class="img-thumbnail", style="max-width: 50px")
+            h3= edu.carrera 
+            p= edu.institucion 
+            p Año de ingreso: #{edu.año}

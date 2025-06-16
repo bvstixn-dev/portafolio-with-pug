@@ -1,0 +1,21 @@
+extends     layout/index 
+
+block content 
+
+    h1 Contacto
+    form(action="/contact" method="post" class="formulario-contacto")
+        div
+            label(for="nombre") Nombre:   ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ
+            input(type="text" id="nombre" name="nombre" required) 
+            
+        
+        div
+            label(for="email") Email:  ㅤ ㅤ ㅤ ㅤ ㅤ ㅤ    
+            input(type="email", id="email", name="email" required) 
+        
+        
+        div
+            label(for="mensaje") Mensaje:     ㅤ     
+            textarea(id="mensaje" name="Mensaje" required)
+            
+        button(type="submit") Enviar

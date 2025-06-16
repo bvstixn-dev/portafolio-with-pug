@@ -1,0 +1,36 @@
+{
+  "nombre": "Bastián Galdames",
+  "actitudes": ["Responsable", "Trabajo en equipo", "Comunicación efectiva"],
+  "educacion": [
+    {
+      "imagen": "/img/stomas.png",
+      "carrera": "Analista Programador",
+      "institucion": "Instituto Profesional Santo Tomás",
+      "año": 2024
+    },
+    {
+      "imagen": "/img/gracia.png",
+      "carrera": "Licenciatura 4to medio",
+      "institucion": "Liceo Gracia Y Paz Temuco",
+      "año": 2020
+    }
+  ],
+  "proyectos": [
+    {
+      "nombre": "Gestión de Inventario",
+      "descripcion": "Aplicación de escritorio para administrar stock de productos, con funciones CRUD y autenticación.",
+      "imagen": "/img/inventario.png",
+      "github": "https://github.com/bvstixn-dev/gestion-inventario"
+    },
+    {
+      "nombre": "FroggerPython",
+      "descripcion": "Versión del clásico juego 'Frogger' desarrollada en Python utilizando Pygame.",
+      "imagen": "/img/frogger.jpg",
+      "github": "https://github.com/bvstixn-dev/frogger-in-python"
+    },
+    {
+      "nombre": "Portafolio Personal",
+      "descripcion": "Sitio web hecho en Express.js y Pug para mostrar mis proyectos, educación y habilidades."
+    }
+  ]
+}

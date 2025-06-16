@@ -1,0 +1,10 @@
+extends layout/index
+
+block content
+  h1 Proyectos
+
+  each proyecto in proyectos
+    .card.mb-3.p-3.shadow-sm
+      h3.text-primary= proyecto.nombre
+      p= proyecto.descripcion
+      a.btn.btn-primary(href=proyecto.github, target="_blank") Ver en GitHub
