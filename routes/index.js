@@ -5,6 +5,7 @@ const router = express.Router();
 const datos = require('../data/datos.json');
 
 
+
 router.get('/', (req,res) => {
     res.render('index', { 
         nombre: datos.nombre,
@@ -24,6 +25,7 @@ router.get('/cv', (req, res) => {
         educacion: datos.educacion
     });
 });
+
 
 router.get('/projects', (req, res) => {
     res.render('projects', {

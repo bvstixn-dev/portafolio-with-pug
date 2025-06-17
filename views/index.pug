@@ -4,13 +4,13 @@ block content
   .container.mt-4
     .row.align-items-center
       .col-md-6
-        h1 Hola!
+        h1.animate__animated.animate__fadeInDown Hola!
         p Bienvenidos a mi portafolio
         a.btn.btn-dark.mt-2(href="https://github.com/bvstixn-dev", target="_blank")
           i.fab.fa-github.me-2
           | Ver mi GitHub
       .col-md-6.text-center
-        img(src="/img/hi.webp", alt="Mi foto", class="img-thumbnail", style="max-width: 200px")
+        img(src="/img/hi.webp", alt="Mi foto", class="img-thumbnail rounded-circle shadow", style="max-width: 200px")
 
     hr.my-5
 
@@ -18,7 +18,7 @@ block content
     .row
         each proyecto in proyectos.slice(0, 2)
             .col-md-6.mb-4
-                .card.shadow-sm
+                .card.shadow-sm.rounded-4.animate__animated.animate__fadeInUp
                     .col-md-13.text-center
                       img.card-img-top(src=proyecto.imagen, alt=proyecto.nombre, style="max-width: 250px")
                     .card-body

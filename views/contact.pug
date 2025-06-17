@@ -1,21 +1,23 @@
-extends     layout/index 
+extends layout/index
 
-block content 
+block content
+  .container.mt-5
+    h1.text-center.mb-4 Contacto
+    p.text-center.text-muted ¿Tienes dudas o alguna sugerencia? ¡Escríbeme!
 
-    h1 Contacto
-    form(action="/contact" method="post" class="formulario-contacto")
-        div
-            label(for="nombre") Nombre:   ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ
-            input(type="text" id="nombre" name="nombre" required) 
-            
-        
-        div
-            label(for="email") Email:  ㅤ ㅤ ㅤ ㅤ ㅤ ㅤ    
-            input(type="email", id="email", name="email" required) 
-        
-        
-        div
-            label(for="mensaje") Mensaje:     ㅤ     
-            textarea(id="mensaje" name="Mensaje" required)
-            
-        button(type="submit") Enviar
+    form(action="https://formspree.io/f/xldnnqpk" method="POST" class="mx-auto" style="max-width: 600px;")
+      .mb-3
+        label.form-label(for="nombre") Nombre
+        input.form-control(type="text", id="nombre", name="nombre", placeholder="Ingresa tu nombre", required)
+
+      .mb-3
+        label.form-label(for="email") Correo electrónico
+        input.form-control(type="email", id="email", name="email", placeholder="tuemail@ejemplo.com", required)
+
+      .mb-3
+        label.form-label(for="mensaje") Mensaje
+        textarea.form-control(id="mensaje", name="mensaje", rows="5", placeholder="Escribe tu mensaje aquí...", required)
+
+      button.btn.btn-dark.btn-block.mt-3.w-100(type="submit")
+        i.fas.fa-paper-plane.me-2
+        | Enviar mensaje

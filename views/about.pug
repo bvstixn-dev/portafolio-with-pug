@@ -1,7 +1,12 @@
 extends ../views/layout/index
 
-block content 
-    h1 Acerca de mí 
-    ul 
-        each actitud in actitudes
-            li= actitud
+block content
+  .container.mt-5
+    h1.text-center.mb-4 Acerca de mí
+    p.text-center.text-muted Aquí algunas de mis actitudes personales y profesionales:
+
+    ul.list-group.mx-auto(style="max-width: 500px")
+      each actitud in actitudes
+        li.list-group-item.d-flex.align-items-center
+          i.fas.fa-check-circle.text-success.me-2
+          | #{actitud}

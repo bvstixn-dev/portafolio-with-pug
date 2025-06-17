@@ -1,11 +1,19 @@
 extends layout/index
 
-block content 
-    h1 CV
-    //img(src="/img/stomas.png", alt="Universidad Santo Tomas", class="img-thumbnail", style="max-width: 50px")
-    each edu in educacion 
-        div
-            img(src=edu.imagen, class="img-thumbnail", style="max-width: 50px")
-            h3= edu.carrera 
-            p= edu.institucion 
-            p Año de ingreso: #{edu.año}
+block content
+  .container.mt-5
+    h1.text-center.mb-4 Curriculum Vitae
+    p.text-center.text-muted Formación académica
+
+    .row
+      each edu in educacion
+        .col-md-6.mb-4
+          .card.shadow-sm.h-100
+            .row.g-0.align-items-center
+              .col-4.text-center
+                img(src=edu.imagen, alt=edu.institucion, class="img-fluid p-3", style="max-height: 100px")
+              .col-8
+                .card-body
+                  h5.card-title= edu.carrera
+                  p.card-text.mb-1= edu.institucion
+                  p.text-muted.mb-0 Año de ingreso: #{edu.año}

@@ -1,10 +1,18 @@
 extends layout/index
 
 block content
-  h1 Proyectos
+  .container.mt-5
+    h1.text-center.mb-4 Proyectos
 
-  each proyecto in proyectos
-    .card.mb-3.p-3.shadow-sm
-      h3.text-primary= proyecto.nombre
-      p= proyecto.descripcion
-      a.btn.btn-primary(href=proyecto.github, target="_blank") Ver en GitHub
+    .row
+      each proyecto in proyectos
+        .col-md-6.mb-4
+          .card.shadow-sm.h-100
+            if proyecto.imagen
+              img.card-img-top(src=proyecto.imagen, alt=proyecto.nombre)
+            .card-body
+              h5.card-title= proyecto.nombre
+              p.card-text= proyecto.descripcion
+              a.btn.btn-outline-primary(href=proyecto.github, target="_blank")
+                i.fab.fa-github.me-2
+                | Ver en GitHub
