@@ -31,6 +31,7 @@
     {
       "nombre": "Portafolio Personal",
       "descripcion": "Sitio web hecho en Express.js y Pug para mostrar mis proyectos, educación y habilidades.",
+      "imagen": "/img/portafolio.png",
       "github": "https://github.com/bvstixn-dev/portafolio-with-pug"
     }
   ]
