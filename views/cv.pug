@@ -5,15 +5,27 @@ block content
     h1.text-center.mb-4 Curriculum Vitae
     p.text-center.text-muted Formación académica
 
-    .row
-      each edu in educacion
-        .col-md-6.mb-4
-          .card.shadow-sm.h-100
-            .row.g-0.align-items-center
-              .col-4.text-center
-                img(src=edu.imagen, alt=edu.institucion, class="img-fluid p-3", style="max-height: 100px")
-              .col-8
-                .card-body
-                  h5.card-title= edu.carrera
-                  p.card-text.mb-1= edu.institucion
-                  p.text-muted.mb-0 Año de ingreso: #{edu.año}
+      .row
+        each edu in educacion
+          .col-md-6.mb-4
+            .card.shadow-sm.h-100
+              if edu.enlace
+                a(href=edu.enlace, target="_blank", class="text-decoration-none text-dark")
+                  .row.g-0.align-items-center
+                    .col-4.text-center
+                      img(src=edu.imagen, alt=edu.institucion, class="img-fluid p-3", style="max-height: 100px")
+                    .col-8
+                      .card-body
+                        h5.card-title= edu.carrera
+                        p.card-text.mb-1= edu.institucion
+                        p.text-muted.mb-0 Año de obtencion: #{edu.año}
+              else
+                .row.g-0.align-items-center
+                  .col-4.text-center
+                    img(src=edu.imagen, alt=edu.institucion, class="img-fluid p-3", style="max-height: 100px")
+                  .col-8
+                    .card-body
+                      h5.card-title= edu.carrera
+                      p.card-text.mb-1= edu.institucion
+                      p.text-muted.mb-0 Año de ingreso: #{edu.año}
+

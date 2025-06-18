@@ -2,11 +2,18 @@ extends ../views/layout/index
 
 block content
   .container.mt-5
-    h1.text-center.mb-4 Acerca de mí
-    p.text-center.text-muted Aquí algunas de mis actitudes personales y profesionales:
+  .row.justify-content-center
+    .col-md-8
+      .card.shadow-sm
+        .card-header.bg-primary.text-white.text-center
+          h4.mb-0
+            i.fas.fa-user-circle.me-2
+            | Acerca de mí
+        .card-body
+          p.text-muted.text-center Aquí algunas de mis actitudes personales y profesionales:
+          ul.list-group.list-group-flush.mt-3
+            each actitud in actitudes
+              li.list-group-item.d-flex.align-items-center
+                i.fas.fa-check-circle.text-success.me-2
+                | #{actitud}
 
-    ul.list-group.mx-auto(style="max-width: 500px")
-      each actitud in actitudes
-        li.list-group-item.d-flex.align-items-center
-          i.fas.fa-check-circle.text-success.me-2
-          | #{actitud}

@@ -1,6 +1,13 @@
 {
   "nombre": "Bastián Galdames",
-  "actitudes": ["Soy Responsable", "Trabajo en equipo", "Comunicación efectiva"],
+  "actitudes": [
+    "Soy Responsable",
+    "Trabajo en equipo",
+    "Comunicación efectiva",
+    "Pensamiento lógico y analítico",
+    "Capacidad para adaptarme a nuevas tecnologías",
+    "Enfocado en resolver problemas"
+  ],
   "educacion": [
     {
       "imagen": "/img/stomas.png",
@@ -13,6 +20,13 @@
       "carrera": "Licenciatura 4to medio",
       "institucion": "Liceo Gracia Y Paz Temuco",
       "año": 2020
+    },
+    {
+      "imagen": "/img/pilogo.png",
+      "carrera": "Python Essentials",
+      "institucion": "Python Institute",
+      "año": 2024,
+      "enlace": "/img/Certificado.pdf"
     }
   ],
   "proyectos": [
